@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 4 - Demo Button</title>
+</head>
+<body>
+
+    <!-- Button có ý nghĩa -->
+    <button id="btnGreeting">Hiển thị lời chào</button>
+    <button id="btnChangeColor">Đổi màu nền</button>
+
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Nhập tên">
+        <button type="submit">Gửi</button>
+    </form>
+
+    <script>
+        // Button 1: Hiển thị lời chào
+        document.getElementById("btnGreeting").addEventListener("click", function () {
+            alert("Chúc bạn một ngày tốt lành! 🌟");
+        });
+
+        // Button 2: Đổi màu nền
+        document.getElementById("btnChangeColor").addEventListener("click", function () {
+            const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        });
+
+        // Xử lý Form
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            const name = document.getElementById("name").value.trim();
+
+            if (name === "") {
+                alert("Vui lòng nhập tên!");
+                event.preventDefault();
+            } else {
+                alert("Xin chào " + name);
+            }
+        });
+    </script>
+
+</body>
+</html>
