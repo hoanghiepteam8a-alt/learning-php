@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sinh viên</title>
+</head>
+<body>
+
+<h2 align="center">QUẢN LÝ SINH VIÊN</h2>
+
+<table border="1" width="700" align="center" cellspacing="0" cellpadding="5">
+    <tr>
+        <th>ID</th>
+        <th>Họ và tên</th>
+        <th>Điểm</th>
+        <th>Xếp loại</th>
+    </tr>
+
+    <tr>
+        <td colspan="4"><b>Khóa A</b></td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>A</td>
+        <td>7</td>
+        <!-- ô Xếp loại gộp cho 2 bạn đầu -->
+        <td rowspan="2" align="center" valign="middle">Khá</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>B</td>
+        <td>8</td>
+        <!-- ô Xếp loại của hàng này bị bỏ (đã gộp ở trên) -->
+    </tr>
+
+    <tr>
+        <td colspan="4"><b>Khóa B</b></td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>C</td>
+        <td>5</td>
+        <td>Trung bình</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>D</td>
+        <td>10</td>
+        <td>Giỏi</td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><b>TỔNG CỘNG</b></td>
+        <td>7.5</td>
+        <td>Khá</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
